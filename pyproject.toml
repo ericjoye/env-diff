@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "shipstack-envdiff"
+version = "0.1.0"
+description = "Compare two .env files and show added, removed, and changed keys"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+env-diff = "env_diff:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/env_diff"]

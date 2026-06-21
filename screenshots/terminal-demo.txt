@@ -1,0 +1,12 @@
+[90m╭──────────────────────────────────────────────────────────────────╮[0m
+[90m│[0m   [91m●[0m [93m●[0m [92m●[0m   [1m[96menv-diff[0m[0m  [2mSpot differences between two .env files at a glance[0m [90m│[0m
+[90m├──────────────────────────────────────────────────────────────────┤[0m
+[90m│[0m [2m# a.env: API_KEY, DB_HOST, DB_PORT, DEBUG[0m                        [90m│[0m
+[90m│[0m [2m# b.env: API_KEY, DB_HOST, DB_PORT, LOG_LEVEL[0m                    [90m│[0m
+[90m│[0m [92m$[0m [97menv-diff a.env b.env[0m                                           [90m│[0m
+[90m│[0m [91m- DEBUG[0m[2m       (only in a.env)[0m                                    [90m│[0m
+[90m│[0m [92m+ LOG_LEVEL[0m[2m   (only in b.env)[0m                                    [90m│[0m
+[90m│[0m [93m~ API_KEY[0m: [91mabc123[0m [2m→[0m [92mxyz789[0m                                       [90m│[0m
+[90m│[0m                                                                  [90m│[0m
+[90m│[0m [2m1 removed, 1 added, 1 changed[0m                                    [90m│[0m
+[90m╰──────────────────────────────────────────────────────────────────╯[0m

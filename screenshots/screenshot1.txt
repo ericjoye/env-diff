@@ -1,0 +1,14 @@
+╔══════════════════════════════════════════════════════════════════╗
+║  env-diff — Compare .env Files                                   ║
+║  $ env-diff .env.example .env                                    ║
+╚══════════════════════════════════════════════════════════════════╝
+
+$ env-diff /tmp/.env.example /tmp/.env.production
+- REDIS_URL  (only in /tmp/.env.example)
++ NEW_API_KEY  (only in /tmp/.env.production)
+~ DATABASE_URL: postgres://localhost/mydb -> postgres://prod-server/mydb
+~ DEBUG: false -> true
+~ LOG_LEVEL: info -> warning
+~ SECRET_KEY: supersecretkey123 -> prodsecretkey456
+
+1 removed, 1 added, 4 changed total

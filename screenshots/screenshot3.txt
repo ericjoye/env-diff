@@ -1,0 +1,14 @@
+╔══════════════════════════════════════════════════════════════════╗
+║  env-diff — Identical Files (No Differences)                     ║
+╚══════════════════════════════════════════════════════════════════╝
+
+$ cp /tmp/.env.example /tmp/.env.copy
+$ env-diff /tmp/.env.example /tmp/.env.copy
+No differences found.
+
+$ env-diff /tmp/.env.example /tmp/.env.copy --quiet
+$ echo $?
+0
+
+$ env-diff /tmp/.env.example /tmp/.env.copy --no-color
+No differences found.
